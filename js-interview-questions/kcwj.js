@@ -11,7 +11,7 @@ const memoize = (funcsq) => {
             return cache;
         } else {
             console.log("calculating first time");
-            var result = sq(num);
+            var result = funcsq(num);
             cache[num] = result;
             return cache[num];
         }

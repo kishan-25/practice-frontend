@@ -1,16 +1,16 @@
-// var sum = function(a){
-//     console.log("a : ", a);
-//     var c = 4;
-//     return function(b){
-//         console.log("a : ", a);
-//         console.log("b : ", b);
-//         console.log("c : ", c);
-//         return a+b+c;
-//     }
-// }
+var sum = function(a){
+    console.log("a : ", a);
+    var c = 4;
+    return function(b){
+        console.log("a : ", a);
+        console.log("b : ", b);
+        console.log("c : ", c);
+        return a+b+c;
+    }
+}
 
-// var store = sum(2);
-// console.log(store(5));
+var store = sum(2);
+console.log(store(5));
 
 function sum(a, b, c){
     return {
