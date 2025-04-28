@@ -1,3 +1,8 @@
+// "Allow the function to be called at most once in every X milliseconds, no matter how often the event happens."
+
+// Even if the user triggers the event 1000 times, it will run the function once every X ms.
+
+// Use case: Scroll event, resize event, button spam prevention.
 
 const mythrottle=(fn, delay)=>{
     return function(...args){
